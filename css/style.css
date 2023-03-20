@@ -1,0 +1,142 @@
+body{
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 42px;
+}
+
+#container{
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    margin-top: 70px;
+}
+
+/* botões */
+
+#bt-container button {
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: none;
+    background-color: rgb(114, 114, 114);
+    color: white;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.349);
+}
+#bt-container button:hover{
+    filter: brightness(0.9);
+}
+#voltar{
+    display: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border: none;
+    background-color: rgb(114, 114, 114);
+    color: white;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.349);
+}
+#voltar:hover{
+    filter: brightness(0.9);
+}
+
+.box{
+    height: 100px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    flex: 1 1 33%; 
+}
+
+#block1, #block2, #block3 {
+    border-top: none;
+}
+#block3,#block6, #block9 {
+    border-right: none;
+}
+#block4, #block1, #block7{
+    border-left: none;
+}
+#block7, #block8, #block9{
+    border-bottom: none;
+}
+
+.x{
+    font-size: 65px;
+    color: red;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.o{
+    width: 50px;
+    height: 50px;
+    border: 5px solid green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+
+/* classe pra esconder  */
+.hide{
+    opacity: 0;
+    z-index: -5;
+    transition: 0.5s;
+} 
+
+
+/* placar */
+
+#score-container{
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+#x-score{
+    color: red;
+    margin-right: 3px;
+}
+#o-score{
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    border: 2px solid green;
+
+}
+.score-box{
+    margin: 0 20px;
+}
+
+/* mensagem de vitoria */
+
+#message p{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    width: 500px;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 100;
+}
