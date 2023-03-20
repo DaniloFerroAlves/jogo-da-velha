@@ -13,7 +13,8 @@
 <li>Html e Css</li>
 <li>Javascript</li>
 </ul>
-<h2>🔖 Layout<h2>
+<h2>🔖 Layout</h2>
+<p>Parece acessar o meu projeto basta você entrar <a href="https://daniloferroalves.github.io/jogo-da-velha/">nesse link</a></p>
 
 
 
